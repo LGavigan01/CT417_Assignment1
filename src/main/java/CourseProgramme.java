@@ -43,7 +43,7 @@ public class CourseProgramme {
         this.listOfStudents = listOfStudents;
     }
 
-    public LocalDateTimeDate getStartDate() {
+    public DateTime getStartDate() {
         return startDate;
     }
 
