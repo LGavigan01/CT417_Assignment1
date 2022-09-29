@@ -4,17 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bef91e2b-7e5f-467c-9a93-1e62c2914ac7" name="Changes" comment="Fixing up the Student parameters and creating a simple JUnit test for getUserName()">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/CourseProgrammeTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/LecturerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ModuleTest.java" afterDir="false" />
+    <list default="true" id="bef91e2b-7e5f-467c-9a93-1e62c2914ac7" name="Changes" comment="Updating content of classes and corresponding tests">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CourseProgramme.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CourseProgramme.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Lecturer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Lecturer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Module.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Module.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/StudentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StudentTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CourseProgramme.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CT417/CourseProgramme.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Lecturer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CT417/Lecturer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Module.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CT417/Module.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CT417/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/CourseProgrammeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CT417/CourseProgrammeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/LecturerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CT417/LecturerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ModuleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CT417/ModuleTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/StudentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CT417/StudentTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,6 +79,7 @@
       <recent name="" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="CT417" />
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
@@ -229,7 +229,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663664764780</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Updating content of classes and corresponding tests">
+      <created>1664474493107</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1664474493107</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -245,6 +252,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Fixing up the Student parameters and creating a simple JUnit test for getUserName()" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixing up the Student parameters and creating a simple JUnit test for getUserName()" />
+    <MESSAGE value="Updating content of classes and corresponding tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updating content of classes and corresponding tests" />
   </component>
 </project>

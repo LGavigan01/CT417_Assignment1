@@ -1,3 +1,5 @@
+package CT417;
+
 import java.time.LocalDate;
 import java.util.ArrayList;
 
@@ -9,14 +11,14 @@ public class Lecturer{
     private int id;
     private String userName;
 
-    private ArrayList modulesTaught;
+    private ArrayList<Module> module;
 
     public Lecturer(String name, int age, LocalDate dateOfBirth, int id){ //Still need to add modules taught
         this.name = name;
         this.age = age;
         this.dateOfBirth = dateOfBirth;
         this.id = id;
-        this.modulesTaught = new ArrayList<>();
+        this.module = new ArrayList<>();
     }
 
     public String getName() {
@@ -55,12 +57,18 @@ public class Lecturer{
         return userName + age;
     }
 
-    public ArrayList getModulesTaught() {
-        return modulesTaught;
+    public ArrayList<Module> getModule() {
+        return module;
     }
 
-    public void setModulesTaught(ArrayList modulesTaught) {
-        this.modulesTaught = modulesTaught;
+    public void setModule(ArrayList<Module> modules) {
+        this.module =  modules;
+    }
+
+    public void addModule(Module m) {
+        ArrayList<Module> addModule = module;
+        addModule.add(m);
+        setModule(addModule);
     }
 }
 
