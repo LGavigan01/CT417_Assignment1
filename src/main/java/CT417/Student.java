@@ -11,16 +11,16 @@ public class Student {
     private LocalDate dateOfBirth;
     private int id;
     private String userName;
-    private ArrayList<String> courses;
-    private ArrayList<String> modules;
+    private ArrayList<CourseProgramme> course;
+    private ArrayList<Module> module;
 
     public Student(String name, int age, LocalDate dateOfBirth, int id){ //Still need to add courses and modules
         this.name = name;
         this.age = age;
         this.dateOfBirth = dateOfBirth;
         this.id = id;
-        this.courses = new ArrayList<>();;
-        this.modules = new ArrayList<>();;
+        this.course = new ArrayList<>();;
+        this.module = new ArrayList<>();;
         this.userName = name + age;
     }
 
@@ -56,23 +56,35 @@ public class Student {
         this.id = id;
     }
 
-    public List getCourses() {
-        return courses;
-    }
-
-    public ArrayList getModules() {
-        return modules;
-    }
-
     public String getUserName() {
         return userName;
     }
 
-    public void setCourses(ArrayList<String> courses) {
-        this.courses = courses;
+    public ArrayList<CourseProgramme> getCourse() {
+        return course;
     }
 
-    public void setModules(ArrayList<String> modules) {
-        this.modules = modules;
+    public void setCourse(ArrayList<CourseProgramme> courses) {
+        this.course = courses;
+    }
+
+    public ArrayList<Module> getModulesRegisteredFor() {
+        return module;
+    }
+
+    public void setModulesRegisteredFor(ArrayList<Module> module) {
+        this.module = module;
+    }
+
+    public void addCourse(CourseProgramme addCourse) {
+        ArrayList<CourseProgramme> addCourseProgramme = course;
+        addCourseProgramme.add(addCourse);
+        setCourse(addCourseProgramme);
+    }
+
+    public void addModule(Module addModule) {
+        ArrayList<Module> addAModule = module;
+        addAModule.add(addModule);
+        setModulesRegisteredFor(addAModule);
     }
 }
