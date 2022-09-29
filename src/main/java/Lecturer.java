@@ -11,12 +11,12 @@ public class Lecturer{
 
     private ArrayList modulesTaught;
 
-    public Lecturer(String name, int age, LocalDate dateOfBirth, int id , ArrayList modulesTaught){ //Still need to add modules taught
+    public Lecturer(String name, int age, LocalDate dateOfBirth, int id){ //Still need to add modules taught
         this.name = name;
         this.age = age;
         this.dateOfBirth = dateOfBirth;
         this.id = id;
-        this.modulesTaught = modulesTaught;
+        this.modulesTaught = new ArrayList<>();
     }
 
     public String getName() {
@@ -55,6 +55,12 @@ public class Lecturer{
         return userName + age;
     }
 
+    public ArrayList getModulesTaught() {
+        return modulesTaught;
+    }
 
+    public void setModulesTaught(ArrayList modulesTaught) {
+        this.modulesTaught = modulesTaught;
+    }
 }
 

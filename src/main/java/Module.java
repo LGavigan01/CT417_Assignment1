@@ -8,11 +8,11 @@ public class Module {
     private ArrayList<String> associatedCourses;
     private String lecturerResponsible;
 
-    public Module(String moduleName, String moduleId, ArrayList<String> listOfStudents, ArrayList<String> associatedCourses, String lecturerResponsible){
+    public Module(String moduleName, String moduleId, String lecturerResponsible){
         this.moduleName = moduleName;
         this.moduleId = moduleId;
-        this.listOfStudents = listOfStudents;
-        this.associatedCourses = associatedCourses;
+        this.listOfStudents = new ArrayList<>();
+        this.associatedCourses = new ArrayList<>();
         this.lecturerResponsible = lecturerResponsible;
     }
 
@@ -55,4 +55,6 @@ public class Module {
     public void setLecturerResponsible(String lecturerResponsible) {
         this.lecturerResponsible = lecturerResponsible;
     }
+
+
 }

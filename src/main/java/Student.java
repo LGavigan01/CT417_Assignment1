@@ -1,4 +1,5 @@
 import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.List;
 
 public class Student {
@@ -8,16 +9,16 @@ public class Student {
     private LocalDate dateOfBirth;
     private int id;
     private String userName;
-    private List courses;
-    private List modules;
+    private ArrayList<String> courses;
+    private ArrayList<String> modules;
 
-    public Student(String name, int age, LocalDate dateOfBirth, int id, List courses, List modules){ //Still need to add courses and modules
+    public Student(String name, int age, LocalDate dateOfBirth, int id){ //Still need to add courses and modules
         this.name = name;
         this.age = age;
         this.dateOfBirth = dateOfBirth;
         this.id = id;
-        this.courses = courses;
-        this.modules = modules;
+        this.courses = new ArrayList<>();;
+        this.modules = new ArrayList<>();;
         this.userName = name + age;
     }
 
@@ -57,19 +58,19 @@ public class Student {
         return courses;
     }
 
-    public void setCourses(List courses) {
-        this.courses = courses;
-    }
-
-    public List getModules() {
+    public ArrayList getModules() {
         return modules;
-    }
-
-    public void setModules(List modules) {
-        this.modules = modules;
     }
 
     public String getUserName() {
         return userName;
+    }
+
+    public void setCourses(ArrayList<String> courses) {
+        this.courses = courses;
+    }
+
+    public void setModules(ArrayList<String> modules) {
+        this.modules = modules;
     }
 }
