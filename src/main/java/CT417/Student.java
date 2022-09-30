@@ -2,7 +2,6 @@ package CT417;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
-import java.util.List;
 
 public class Student {
 
@@ -86,5 +85,11 @@ public class Student {
         ArrayList<Module> addAModule = module;
         addAModule.add(addModule);
         setModulesRegisteredFor(addAModule);
+    }
+
+    @Override
+    public String toString()
+    {
+        return "Name:\t" + this.name + "\tAge:\t" + getAge() + "\tUsername:\t" + getUserName();
     }
 }

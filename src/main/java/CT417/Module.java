@@ -6,14 +6,14 @@ public class Module {
 
     private String moduleName;
     private String moduleId;
-    private ArrayList<Student> student;
+    private ArrayList<Student> listOfStudents;
     private ArrayList<CourseProgramme> course;
-    private String lecturerResponsible;
+    private Lecturer lecturerResponsible;
 
-    public Module(String moduleName, String moduleId, String lecturerResponsible){
+    public Module(String moduleName, String moduleId, Lecturer lecturerResponsible){
         this.moduleName = moduleName;
         this.moduleId = moduleId;
-        this.student = new ArrayList<>();
+        this.listOfStudents = new ArrayList<>();
         this.course = new ArrayList<>();
         this.lecturerResponsible = lecturerResponsible;
     }
@@ -35,14 +35,14 @@ public class Module {
     }
 
     public ArrayList<Student> getStudent() {
-        return student;
+        return listOfStudents;
     }
 
     public void setStudent(ArrayList<Student> student) {
-        this.student = student;
+        this.listOfStudents = student;
     }
     public void addStudent(Student s1) {
-        ArrayList<Student> addAStudent = student;
+        ArrayList<Student> addAStudent = listOfStudents;
         addAStudent.add(s1);
         setStudent(addAStudent);
     }
@@ -60,13 +60,30 @@ public class Module {
         setCourse(addCourseProgramme);
     }
 
-    public String getLecturerResponsible() {
+    public Lecturer getLecturerResponsible() {
         return lecturerResponsible;
     }
 
-    public void setLecturerResponsible(String lecturerResponsible) {
+    public void setLecturerResponsible(Lecturer lecturerResponsible) {
         this.lecturerResponsible = lecturerResponsible;
     }
 
+    // toString
+    @Override
+    public String toString()
+    {
+        String str = "\n------------------------------------------------\nModule Name:\t" + this.moduleName + "\nModule ID:  \t" + this.moduleId + lecturerResponsible.toString();
+
+        if (this.listOfStudents.size() > 0)
+        {
+            str += "\nStudents:";
+            for (Student student : this.listOfStudents)
+            {
+                str += "\n" + student.toString();
+            }
+        }
+
+        return str;
+    }
 
 }

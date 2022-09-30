@@ -19,6 +19,7 @@ public class Lecturer{
         this.dateOfBirth = dateOfBirth;
         this.id = id;
         this.module = new ArrayList<>();
+        this.userName = name + age;
     }
 
     public String getName() {
@@ -54,7 +55,7 @@ public class Lecturer{
     }
 
     public String getUserName() {
-        return userName + age;
+        return userName;
     }
 
     public ArrayList<Module> getModule() {
@@ -69,6 +70,12 @@ public class Lecturer{
         ArrayList<Module> addModule = module;
         addModule.add(m);
         setModule(addModule);
+    }
+
+    @Override
+    public String toString()
+    {
+        return "\nLecturer Details:\nName:\t" + this.name + "\tAge:\t" + getAge() + "\tUsername:\t" + getUserName();
     }
 }
 

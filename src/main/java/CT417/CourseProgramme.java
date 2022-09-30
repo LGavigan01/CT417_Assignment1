@@ -7,8 +7,8 @@ import java.util.ArrayList;
 public class CourseProgramme {
 
     public String courseName;
-    public ArrayList<String> listOfModules;
-    public ArrayList<String> listOfStudents;
+    public ArrayList<Module> listOfModules;
+    public ArrayList<Student> listOfStudents;
     public DateTime startDate;
     public DateTime endDate;
 
@@ -28,22 +28,38 @@ public class CourseProgramme {
         this.courseName = courseName;
     }
 
-    public ArrayList<String> getListOfModules() {
+    public ArrayList<Module> getListOfModules() {
         return listOfModules;
     }
 
-    public void setListOfModules(ArrayList<String> listOfModules) {
+    public void setListOfModules(ArrayList<Module> listOfModules) {
         this.listOfModules = listOfModules;
     }
 
-    public ArrayList<String> getListOfStudents() {
+    public void setStudent(ArrayList<Student> student) {
+        this.listOfStudents = student;
+    }
+    public void addStudent(Student s1) {
+        ArrayList<Student> addAStudent = listOfStudents;
+        addAStudent.add(s1);
+        setStudent(addAStudent);
+    }
+    public ArrayList<Student> getStudent() {
         return listOfStudents;
     }
 
-    public void setListOfStudents(ArrayList<String> listOfStudents) {
-        this.listOfStudents = listOfStudents;
-    }
 
+    public void setModule(ArrayList<Module> module) {
+        this.listOfModules = module;
+    }
+    public void addModule(Module m1) {
+        ArrayList<Module> addAModule = listOfModules;
+        addAModule.add(m1);
+        setModule(addAModule);
+    }
+    public ArrayList<Module> getModule() {
+        return listOfModules;
+    }
     public DateTime getStartDate() {
         return startDate;
     }
@@ -58,5 +74,23 @@ public class CourseProgramme {
 
     public void setEndDate(DateTime endDate) {
         this.endDate = endDate;
+    }
+
+    @Override
+    public String toString()
+    {
+        String str = "\n\n\nCourse Name:\t" + this.courseName;// + "\nCourse Code:\t" + this.courseCode;
+
+        if (this.listOfModules.size() > 0)
+        {
+            //str += "\n\n\t\t\t\tModules:";
+            for (Module module : this.listOfModules)
+            {
+                str += module.toString();
+            }
+            str += "\n\n\n";
+        }
+
+        return str;
     }
 }

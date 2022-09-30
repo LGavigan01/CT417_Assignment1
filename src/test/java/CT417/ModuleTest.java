@@ -2,13 +2,15 @@ package CT417;
 
 import org.junit.jupiter.api.Test;
 
+import java.time.LocalDate;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class ModuleTest {
 
     public String moduleName = "Software Engineering";
     public String moduleId = "CT417";
-    public String lecturerResponsible = "Liam Gavigan";
+    public Lecturer lecturerResponsible = new Lecturer("Liam Gavigan", 42, LocalDate.parse("1991-08-03"), 7682);
 
     Module module = new Module(moduleName, moduleId, lecturerResponsible);
 
