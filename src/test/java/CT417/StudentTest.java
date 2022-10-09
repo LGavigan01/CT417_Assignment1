@@ -9,8 +9,8 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class StudentTest {
-        List<String> courses = Arrays.asList("CSIT", "ENG", "MA");
-        List<String> modules = Arrays.asList("Maths", "Physics", "Fields and Applications");
+//        List<String> courses = Arrays.asList("CSIT", "ENG", "MA");
+//        List<String> modules = Arrays.asList("Maths", "Physics", "Fields and Applications");
         public String name = "Liam";
         public int age = 21;
         public LocalDate dateOfBirth = LocalDate.parse("2001-08-03");
@@ -43,12 +43,12 @@ class StudentTest {
 
     }
 
-    @Test
-    void getCourses() {
-    }
-
-    @Test
-    void getModules() {
-    }
+//    @Test
+//    void getCourses() {
+//    }
+//
+//    @Test
+//    void getModules() {
+//    }
 
 }

@@ -39,22 +39,24 @@ public class CourseProgramme {
     public void setStudent(ArrayList<Student> student) {
         this.listOfStudents = student;
     }
+
     public void addStudent(Student s1) {
         ArrayList<Student> addAStudent = listOfStudents;
         addAStudent.add(s1);
         setStudent(addAStudent);
     }
+
     public ArrayList<Student> getStudent() {
         return listOfStudents;
     }
 
-
     public void setModule(ArrayList<Module> module) {
         this.listOfModules = module;
     }
-    public void addModule(Module m1) {
+
+    public void addModule(Module module) {
         ArrayList<Module> addAModule = listOfModules;
-        addAModule.add(m1);
+        addAModule.add(module);
         setModule(addAModule);
     }
     public ArrayList<Module> getModule() {
@@ -79,16 +81,15 @@ public class CourseProgramme {
     @Override
     public String toString()
     {
-        String str = "\n\n\nCourse Name:\t" + this.courseName;// + "\nCourse Code:\t" + this.courseCode;
+        String str = "\n\nCourse Name: \t" + getCourseName() + "\n------------------------------------------------\t";
 
         if (this.listOfModules.size() > 0)
         {
-            //str += "\n\n\t\t\t\tModules:";
             for (Module module : this.listOfModules)
             {
                 str += module.toString();
             }
-            str += "\n\n\n";
+            str += "\n\n\n"; // This leaves a reasonable gap between each course, making for easier reading in console
         }
 
         return str;

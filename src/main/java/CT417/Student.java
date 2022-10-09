@@ -10,16 +10,16 @@ public class Student {
     private LocalDate dateOfBirth;
     private int id;
     private String userName;
-    private ArrayList<CourseProgramme> course;
-    private ArrayList<Module> module;
+    private ArrayList<CourseProgramme> courseList;
+    private ArrayList<Module> moduleList;
 
-    public Student(String name, int age, LocalDate dateOfBirth, int id){ //Still need to add courses and modules
+    public Student(String name, int age, LocalDate dateOfBirth, int id){
         this.name = name;
         this.age = age;
         this.dateOfBirth = dateOfBirth;
         this.id = id;
-        this.course = new ArrayList<>();;
-        this.module = new ArrayList<>();;
+        this.courseList = new ArrayList<>();
+        this.moduleList = new ArrayList<>();
         this.userName = name + age;
     }
 
@@ -60,36 +60,36 @@ public class Student {
     }
 
     public ArrayList<CourseProgramme> getCourse() {
-        return course;
+        return courseList;
     }
 
-    public void setCourse(ArrayList<CourseProgramme> courses) {
-        this.course = courses;
+    public void setCourseRegisteredFor(ArrayList<CourseProgramme> courses) {
+        this.courseList = courses;
     }
 
     public ArrayList<Module> getModulesRegisteredFor() {
-        return module;
+        return moduleList;
     }
 
     public void setModulesRegisteredFor(ArrayList<Module> module) {
-        this.module = module;
+        this.moduleList = module;
     }
 
-    public void addCourse(CourseProgramme addCourse) {
-        ArrayList<CourseProgramme> addCourseProgramme = course;
-        addCourseProgramme.add(addCourse);
-        setCourse(addCourseProgramme);
+    public void addCourse(CourseProgramme course) {
+        ArrayList<CourseProgramme> addCourseProgramme = courseList;
+        addCourseProgramme.add(course);
+        setCourseRegisteredFor(addCourseProgramme);
     }
 
-    public void addModule(Module addModule) {
-        ArrayList<Module> addAModule = module;
-        addAModule.add(addModule);
+    public void addModule(Module module) {
+        ArrayList<Module> addAModule = moduleList;
+        addAModule.add(module);
         setModulesRegisteredFor(addAModule);
     }
 
     @Override
     public String toString()
     {
-        return "Name:\t" + this.name + "\tAge:\t" + getAge() + "\tUsername:\t" + getUserName();
+        return "Name:\t" + getName() + "\tAge:\t" + getAge() + "\tUsername:\t" + getUserName();
     }
 }

@@ -7,14 +7,14 @@ public class Module {
     private String moduleName;
     private String moduleId;
     private ArrayList<Student> listOfStudents;
-    private ArrayList<CourseProgramme> course;
+    private ArrayList<CourseProgramme> courseList;
     private Lecturer lecturerResponsible;
 
     public Module(String moduleName, String moduleId, Lecturer lecturerResponsible){
         this.moduleName = moduleName;
         this.moduleId = moduleId;
         this.listOfStudents = new ArrayList<>();
-        this.course = new ArrayList<>();
+        this.courseList = new ArrayList<>();
         this.lecturerResponsible = lecturerResponsible;
     }
 
@@ -41,23 +41,23 @@ public class Module {
     public void setStudent(ArrayList<Student> student) {
         this.listOfStudents = student;
     }
-    public void addStudent(Student s1) {
+    public void addStudent(Student student) {
         ArrayList<Student> addAStudent = listOfStudents;
-        addAStudent.add(s1);
+        addAStudent.add(student);
         setStudent(addAStudent);
     }
     public ArrayList<CourseProgramme> getCourse() {
-        return course;
+        return courseList;
     }
 
     public void setCourse(ArrayList<CourseProgramme> courses) {
-        this.course = courses;
+        this.courseList = courses;
     }
 
-    public void addCourse(CourseProgramme c) {
-        ArrayList<CourseProgramme> addCourseProgramme = course;
-        addCourseProgramme.add(c);
-        setCourse(addCourseProgramme);
+    public void addCourse(CourseProgramme courseProgramme) {
+        ArrayList<CourseProgramme> addACourseProgramme = courseList;
+        addACourseProgramme.add(courseProgramme);
+        setCourse(addACourseProgramme);
     }
 
     public Lecturer getLecturerResponsible() {
@@ -72,7 +72,7 @@ public class Module {
     @Override
     public String toString()
     {
-        String str = "\n------------------------------------------------\nModule Name:\t" + this.moduleName + "\nModule ID:  \t" + this.moduleId + lecturerResponsible.toString();
+        String str = "\nModule Name:\t" + getModuleName() + "\nModule ID:  \t" + getModuleId() + getLecturerResponsible();
 
         if (this.listOfStudents.size() > 0)
         {
@@ -81,6 +81,7 @@ public class Module {
             {
                 str += "\n" + student.toString();
             }
+            str += "\n------------------------------------------------";
         }
 
         return str;

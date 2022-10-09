@@ -10,15 +10,14 @@ public class Lecturer{
     private LocalDate dateOfBirth;
     private int id;
     private String userName;
-
-    private ArrayList<Module> module;
+    private ArrayList<Module> modulesTaught;
 
     public Lecturer(String name, int age, LocalDate dateOfBirth, int id){ //Still need to add modules taught
         this.name = name;
         this.age = age;
         this.dateOfBirth = dateOfBirth;
         this.id = id;
-        this.module = new ArrayList<>();
+        this.modulesTaught = new ArrayList<>();
         this.userName = name + age;
     }
 
@@ -59,23 +58,26 @@ public class Lecturer{
     }
 
     public ArrayList<Module> getModule() {
-        return module;
+        return modulesTaught;
     }
 
-    public void setModule(ArrayList<Module> modules) {
-        this.module =  modules;
+    public void setModulesTaught(ArrayList<Module> modules) {
+        this.modulesTaught =  modules;
     }
 
-    public void addModule(Module m) {
-        ArrayList<Module> addModule = module;
-        addModule.add(m);
-        setModule(addModule);
+    public void addModule(Module module) {
+        ArrayList<Module> addAModule = modulesTaught;
+        addAModule.add(module);
+        setModulesTaught(addAModule);
     }
 
     @Override
     public String toString()
     {
-        return "\nLecturer Details:\nName:\t" + this.name + "\tAge:\t" + getAge() + "\tUsername:\t" + getUserName();
+        String str = "\nLecturer Details:";
+        str += "\nName:\t" + getName() + "\tAge:\t" + getAge() + "\tUsername:\t" + getUserName();
+
+        return str;
     }
 }
 
