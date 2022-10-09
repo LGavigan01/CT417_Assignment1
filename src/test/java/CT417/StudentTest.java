@@ -3,14 +3,11 @@ package CT417;
 import org.junit.jupiter.api.Test;
 
 import java.time.LocalDate;
-import java.util.Arrays;
-import java.util.List;
+import java.util.ArrayList;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class StudentTest {
-//        List<String> courses = Arrays.asList("CSIT", "ENG", "MA");
-//        List<String> modules = Arrays.asList("Maths", "Physics", "Fields and Applications");
         public String name = "Liam";
         public int age = 21;
         public LocalDate dateOfBirth = LocalDate.parse("2001-08-03");
@@ -40,15 +37,14 @@ class StudentTest {
     @Test
     void getId() {
         assertEquals(id, student.getId());
-
     }
 
-//    @Test
-//    void getCourses() {
-//    }
-//
-//    @Test
-//    void getModules() {
-//    }
+    @Test
+    void getModulesRegisteredFor() {
+        Module module = new Module("Software Engineering", "CT417", null);
+        student.addModule(module);
+        ArrayList<Module> modules = student.getModulesRegisteredFor();
+        assertEquals(1, modules.size());
+    }
 
 }
