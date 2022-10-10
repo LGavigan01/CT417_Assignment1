@@ -79,10 +79,22 @@ public class CourseProgramme {
             }
         }
 
-            str+= "Course Programme:\t" + getCourseName();
+        String student = "";
+        if (this.listOfStudents.size() > 0) {
+            student += "\t\t\t\t\nNAME\tID\n";
+            for (Student s : listOfStudents) {
+                student += "Student " + (listOfStudents.indexOf(s) + 1) + ":\t\t" + s.getName() + "\t" + s.getId() + "\n";
+            }
+            //student += "\n";
+        }
+
+            str+="-----------------------------------------------------";
+            str+= "\nCourse Programme:\t" + getCourseName();
             str+="\nStart date:\t\t\t" + startDate.toLocalDate();
             str+="\nEnd date:\t\t\t" + endDate.toLocalDate();
             str+="\nModules Associated:\t\t\t" + module;
+            str+="Students Registered:\t\t\t" + student;
+            str+="-----------------------------------------------------";
         return str;
     }
 }

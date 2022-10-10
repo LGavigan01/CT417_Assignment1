@@ -97,19 +97,21 @@ public class Student {
 
         String module = "";
         if (this.listOfModules.size() > 0) {
+            module += "\n\t\t\t\tID\t\tNAME\n";
             for (Module m : listOfModules) {
-                module += "[" + m.getModuleId() + "] " + m.getModuleName() + "\n\t\t\t\t";
+                module += "Module " + (listOfModules.indexOf(m) + 1) + ":\t\t" + m.getModuleId() + "\t" + m.getModuleName() + "\n";
             }
         }
         String str = "";
-
-            str+= "Student:\t\t" + getName();
+            str+="-----------------------------------------------------";
+            str+= "\nStudent:\t\t" + getName();
             str+= "\nID:\t\t\t\t" + getId();
             str+= "\nUsername:\t\t" + getUserName();
             str+= "\nDate of Birth:\t" + getDateOfBirth();
             str+= "\nAge:\t\t\t" + getAge();
             str+= "\nCourses:\t\t" + course;
-            str+= "\nModules:\t\t" + module;
+            str+= "\nModules Enrolled:\t\t" + module;
+            str+="\n-----------------------------------------------------";
 
             return str;
     }
