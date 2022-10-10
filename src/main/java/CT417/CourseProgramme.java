@@ -73,15 +73,16 @@ public class CourseProgramme {
         String str = "";
         String module = "";
         if (this.listOfModules.size() > 0) {
+            module += "\n\t\t\t\tID\t\tNAME\n";
             for (Module m : listOfModules) {
-                module += "[" + m.getModuleId() + "] " + m.getModuleName() + "\n\t\t\t\t\t";
+                module += "Module " + (listOfModules.indexOf(m) + 1) + ":\t\t" + m.getModuleId() + "\t" + m.getModuleName() + "\n";
             }
         }
 
             str+= "Course Programme:\t" + getCourseName();
             str+="\nStart date:\t\t\t" + startDate.toLocalDate();
             str+="\nEnd date:\t\t\t" + endDate.toLocalDate();
-            str+="\nModules:\t\t\t" + module;
+            str+="\nModules Associated:\t\t\t" + module;
         return str;
     }
 }

@@ -4,13 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bef91e2b-7e5f-467c-9a93-1e62c2914ac7" name="Changes" comment="Some additional cleaning up">
+    <list default="true" id="bef91e2b-7e5f-467c-9a93-1e62c2914ac7" name="Changes" comment="Further method and object adjustments">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/CT417/CourseProgramme.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CT417/CourseProgramme.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/CT417/Lecturer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CT417/Lecturer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/CT417/Module.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CT417/Module.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/CT417/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CT417/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/CT417/StudentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CT417/StudentTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -260,7 +259,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665305835440</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Further method and object adjustments">
+      <created>1665341807691</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1665341807691</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -281,17 +287,7 @@
     <MESSAGE value="Addition of output" />
     <MESSAGE value="test" />
     <MESSAGE value="Some additional cleaning up" />
-    <option name="LAST_COMMIT_MESSAGE" value="Some additional cleaning up" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/CT417/TestClass.java</url>
-          <line>68</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Further method and object adjustments" />
+    <option name="LAST_COMMIT_MESSAGE" value="Further method and object adjustments" />
   </component>
 </project>

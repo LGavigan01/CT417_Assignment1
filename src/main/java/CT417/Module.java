@@ -72,9 +72,19 @@ public class Module {
     @Override
     public String toString()
     {
+        String student = "";
+        if (this.listOfStudents.size() > 0) {
+            student += "\t\t\t\tNAME\tID\n";
+            for (Student s : listOfStudents) {
+                    student += "Student " + (listOfStudents.indexOf(s) + 1) + ":\t\t" + s.getName() + "\t" + s.getId() + "\n";
+            }
+        }
+        
         String str = "";
             str += "Module:\t\t\t" + "[" + getModuleId() + "] " + getModuleName();
             str += "\nLecturer Details:\n" + getLecturerResponsible().toString();
+            str += "Students Registered:\t\t\n" + student;
+            str += "\n"; //Added this line to allow for better readability in the console output
             return str;
     }
 

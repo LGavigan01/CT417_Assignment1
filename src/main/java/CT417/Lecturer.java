@@ -1,6 +1,7 @@
 package CT417;
 
 import java.time.LocalDate;
+import java.time.Period;
 import java.util.ArrayList;
 
 public class Lecturer{
@@ -12,11 +13,11 @@ public class Lecturer{
     private String userName;
     private ArrayList<Module> modulesTaught;
 
-    public Lecturer(String name, int age, LocalDate dateOfBirth, int id){
+    public Lecturer(String name, LocalDate dateOfBirth, int id){
         this.name = name;
-        this.age = age;
         this.dateOfBirth = dateOfBirth;
         this.id = id;
+        this.age = Period.between(dateOfBirth, LocalDate.now()).getYears(); //Handy method to calculate age from dateOfBirth
         this.modulesTaught = new ArrayList<>();
         this.userName = name + age;
     }
