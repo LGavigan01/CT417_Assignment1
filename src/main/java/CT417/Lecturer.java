@@ -84,7 +84,6 @@ public class Lecturer{
             str += "\nUsername:\t\t" + getUserName();
             str += "\nDate of Birth:\t" + getDateOfBirth();
             str += "\nAge:\t\t\t" + getAge() + "\n";
-            //str+= "\nModules:\n" + module;
             return str;
         }
 }

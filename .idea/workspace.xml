@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bef91e2b-7e5f-467c-9a93-1e62c2914ac7" name="Changes" comment="Adjusting readability of output">
+    <list default="true" id="bef91e2b-7e5f-467c-9a93-1e62c2914ac7" name="Changes" comment="Additional output adjustment">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/CT417/CourseProgramme.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CT417/CourseProgramme.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CT417/Lecturer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CT417/Lecturer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/CT417/Module.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CT417/Module.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CT417/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CT417/Student.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -272,7 +272,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665414789524</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Additional output adjustment">
+      <created>1665417389098</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1665417389099</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -295,6 +302,7 @@
     <MESSAGE value="Some additional cleaning up" />
     <MESSAGE value="Further method and object adjustments" />
     <MESSAGE value="Adjusting readability of output" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adjusting readability of output" />
+    <MESSAGE value="Additional output adjustment" />
+    <option name="LAST_COMMIT_MESSAGE" value="Additional output adjustment" />
   </component>
 </project>

@@ -73,7 +73,7 @@ public class CourseProgramme {
         String str = "";
         String module = "";
         if (this.listOfModules.size() > 0) {
-            module += "\n\t\t\t\tID\t\tNAME\n";
+            module += "\t\t\t\tID\t\tNAME\n";
             for (Module m : listOfModules) {
                 module += "Module " + (listOfModules.indexOf(m) + 1) + ":\t\t" + m.getModuleId() + "\t" + m.getModuleName() + "\n";
             }
@@ -81,20 +81,19 @@ public class CourseProgramme {
 
         String student = "";
         if (this.listOfStudents.size() > 0) {
-            student += "\t\t\t\t\nNAME\tID\n";
+            student += "\t\t\t\tNAME\tID\n";
             for (Student s : listOfStudents) {
                 student += "Student " + (listOfStudents.indexOf(s) + 1) + ":\t\t" + s.getName() + "\t" + s.getId() + "\n";
             }
-            //student += "\n";
         }
 
             str+="-----------------------------------------------------";
             str+= "\nCourse Programme:\t" + getCourseName();
             str+="\nStart date:\t\t\t" + startDate.toLocalDate();
             str+="\nEnd date:\t\t\t" + endDate.toLocalDate();
-            str+="\nModules Associated:\t\t\t" + module;
-            str+="Students Registered:\t\t\t" + student;
-            str+="-----------------------------------------------------";
+            str+="\nModules Associated:\n" + module;
+            str+="Students Registered:\n" + student;
+            str+="\n-----------------------------------------------------";
         return str;
     }
 }

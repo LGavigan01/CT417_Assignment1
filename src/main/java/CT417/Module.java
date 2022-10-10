@@ -84,9 +84,8 @@ public class Module {
             str+="-----------------------------------------------------";
             str += "\nModule:\t\t\t" + "[" + getModuleId() + "] " + getModuleName();
             str += "\nLecturer Details:\n" + getLecturerResponsible().toString();
-            str += "Students Registered:\t\t\n" + student;
-            str += "\n"; //Added this line to allow for better readability in the console output
-            str+="-----------------------------------------------------";
+            str += "Students Registered:\n" + student;
+            str+="\n-----------------------------------------------------";
             return str;
     }
 
