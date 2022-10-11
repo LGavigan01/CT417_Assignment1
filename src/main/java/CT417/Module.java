@@ -81,11 +81,11 @@ public class Module {
         }
         
         String str = "";
-            str+="-----------------------------------------------------";
+            str+="-------------------------------------------------------------";
             str += "\nModule:\t\t\t" + "[" + getModuleId() + "] " + getModuleName();
             str += "\nLecturer Details:\n" + getLecturerResponsible().toString();
             str += "Students Registered:\n" + student;
-            str+="\n-----------------------------------------------------";
+            str+="-------------------------------------------------------------";
             return str;
     }
 

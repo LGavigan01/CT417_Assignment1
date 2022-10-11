@@ -87,13 +87,13 @@ public class CourseProgramme {
             }
         }
 
-            str+="-----------------------------------------------------";
+            str+="-------------------------------------------------------------";
             str+= "\nCourse Programme:\t" + getCourseName();
             str+="\nStart date:\t\t\t" + startDate.toLocalDate();
             str+="\nEnd date:\t\t\t" + endDate.toLocalDate();
             str+="\nModules Associated:\n" + module;
             str+="Students Registered:\n" + student;
-            str+="\n-----------------------------------------------------";
+            str+="\n-------------------------------------------------------------";
         return str;
     }
 }

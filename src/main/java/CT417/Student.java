@@ -103,7 +103,7 @@ public class Student {
             }
         }
         String str = "";
-            str+="-----------------------------------------------------";
+            str+="-------------------------------------------------------------";
             str+= "\nStudent:\t\t" + getName();
             str+= "\nID:\t\t\t\t" + getId();
             str+= "\nUsername:\t\t" + getUserName();
@@ -111,7 +111,7 @@ public class Student {
             str+= "\nAge:\t\t\t" + getAge();
             str+= "\nCourses:\t\t" + course;
             str+= "\nModules Enrolled:\t\t" + module;
-            str+="\n-----------------------------------------------------";
+            str+="-------------------------------------------------------------";
 
             return str;
     }

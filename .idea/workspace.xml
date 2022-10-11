@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bef91e2b-7e5f-467c-9a93-1e62c2914ac7" name="Changes" comment="Further cleansing of output">
+    <list default="true" id="bef91e2b-7e5f-467c-9a93-1e62c2914ac7" name="Changes" comment="Moving tests out of package (Causing errors with testing process)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/CT417/CourseProgrammeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CourseProgrammeTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/CT417/LecturerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LecturerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/CT417/ModuleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ModuleTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/CT417/StudentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StudentTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CT417/CourseProgramme.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CT417/CourseProgramme.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CT417/Module.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CT417/Module.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CT417/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CT417/Student.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -322,7 +320,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665418248834</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Moving tests out of package (Causing errors with testing process)">
+      <created>1665478914036</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1665478914036</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -347,6 +352,7 @@
     <MESSAGE value="Adjusting readability of output" />
     <MESSAGE value="Additional output adjustment" />
     <MESSAGE value="Further cleansing of output" />
-    <option name="LAST_COMMIT_MESSAGE" value="Further cleansing of output" />
+    <MESSAGE value="Moving tests out of package (Causing errors with testing process)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Moving tests out of package (Causing errors with testing process)" />
   </component>
 </project>
