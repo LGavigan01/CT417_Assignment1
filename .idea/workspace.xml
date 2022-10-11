@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bef91e2b-7e5f-467c-9a93-1e62c2914ac7" name="Changes" comment="Additional output adjustment">
+    <list default="true" id="bef91e2b-7e5f-467c-9a93-1e62c2914ac7" name="Changes" comment="Further cleansing of output">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CT417/CourseProgramme.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CT417/CourseProgramme.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CT417/Lecturer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CT417/Lecturer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CT417/Module.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CT417/Module.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/CT417/CourseProgrammeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CourseProgrammeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/CT417/LecturerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LecturerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/CT417/ModuleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ModuleTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/CT417/StudentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StudentTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,8 +45,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -76,29 +78,17 @@
       <recent name="" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="CT417" />
       <recent name="" />
+      <recent name="CT417" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="CT417" />
       <recent name="" />
       <recent name="CT417Pack" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TestClass">
-    <configuration name="TestClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="CT417.TestClass" />
-      <module name="CT417_Assignment1.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="CT417.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="StudentTest.getAge" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.CourseProgrammeTest">
+    <configuration name="CourseProgrammeTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -111,7 +101,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;StudentTest.getAge&quot;" />
+            <option value="&quot;CourseProgrammeTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -121,7 +111,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="StudentTest.getDateOfBirth" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="CourseProgrammeTest.getCourseName" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -134,7 +124,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;StudentTest.getDateOfBirth&quot;" />
+            <option value="&quot;CourseProgrammeTest.getCourseName&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -144,7 +134,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="StudentTest.getModulesRegisteredFor" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="LecturerTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -157,7 +147,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;CT417.StudentTest.getModulesRegisteredFor&quot;" />
+            <option value="&quot;CT417Tests.LecturerTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -167,7 +157,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="StudentTest.getUserName" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="LecturerTest.getName (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -180,7 +170,53 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;StudentTest.getUserName&quot;" />
+            <option value="&quot;LecturerTest.getName&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="LecturerTest.getName" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;CT417.LecturerTest.getName&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="ModuleTest" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;CT417.ModuleTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -192,11 +228,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.StudentTest.getModulesRegisteredFor" />
-        <item itemvalue="Application.TestClass" />
-        <item itemvalue="Gradle.StudentTest.getAge" />
-        <item itemvalue="Gradle.StudentTest.getDateOfBirth" />
-        <item itemvalue="Gradle.StudentTest.getUserName" />
+        <item itemvalue="Gradle.CourseProgrammeTest" />
+        <item itemvalue="Gradle.CourseProgrammeTest.getCourseName" />
+        <item itemvalue="Gradle.LecturerTest.getName (1)" />
+        <item itemvalue="Gradle.LecturerTest" />
+        <item itemvalue="Gradle.LecturerTest.getName" />
       </list>
     </recent_temporary>
   </component>
@@ -279,7 +315,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665417389099</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Further cleansing of output">
+      <created>1665418248834</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1665418248834</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -303,6 +346,7 @@
     <MESSAGE value="Further method and object adjustments" />
     <MESSAGE value="Adjusting readability of output" />
     <MESSAGE value="Additional output adjustment" />
-    <option name="LAST_COMMIT_MESSAGE" value="Additional output adjustment" />
+    <MESSAGE value="Further cleansing of output" />
+    <option name="LAST_COMMIT_MESSAGE" value="Further cleansing of output" />
   </component>
 </project>

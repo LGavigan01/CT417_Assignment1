@@ -1,5 +1,4 @@
-package CT417;
-
+import CT417.CourseProgramme;
 import org.junit.jupiter.api.Test;
 import org.joda.time.DateTime;
 
@@ -8,8 +7,8 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 class CourseProgrammeTest {
 
     public String courseName = "CS & IT";
-    public DateTime startDate = new DateTime(2021, 9, 10, 12, 30);
-    public DateTime finishDate = new DateTime(2022, 5, 1, 12, 30);
+    public DateTime startDate = DateTime.parse("2022-09-01");
+    public DateTime finishDate = DateTime.parse("2023-05-01");
     CourseProgramme course = new CourseProgramme(courseName, startDate, finishDate);
 
     @Test

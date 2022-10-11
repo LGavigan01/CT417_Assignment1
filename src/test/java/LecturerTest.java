@@ -1,4 +1,4 @@
-package CT417;
+import CT417.Lecturer;
 
 import org.junit.jupiter.api.Test;
 
@@ -9,10 +9,9 @@ import static org.junit.jupiter.api.Assertions.*;
 class LecturerTest {
 
     public String name = "Liam";
-    public int age = 21;
     public LocalDate dateOfBirth = LocalDate.parse("2001-08-03");
     public int id = 19388151;
-    Lecturer lecturer = new Lecturer(name, age, dateOfBirth, id);
+    Lecturer lecturer = new Lecturer(name, dateOfBirth, id);
 
     @Test
     void getName() {
@@ -26,7 +25,7 @@ class LecturerTest {
 
     @Test
     void getAge() {
-        assertEquals(age, lecturer.getAge());
+        assertEquals(21, lecturer.getAge());
     }
 
     @Test

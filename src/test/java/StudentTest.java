@@ -1,5 +1,5 @@
-package CT417;
-
+import CT417.Module;
+import CT417.Student;
 import org.junit.jupiter.api.Test;
 
 import java.time.LocalDate;
@@ -12,7 +12,7 @@ class StudentTest {
         public int age = 21;
         public LocalDate dateOfBirth = LocalDate.parse("2001-08-03");
         public int id = 19388151;
-        Student student = new Student(name, age, dateOfBirth, id);
+        Student student = new Student(name, dateOfBirth, id);
     @Test
     void getUserName() {
         String username = student.getUserName();
