@@ -1,8 +1,10 @@
 import CT417.Lecturer;
 
+import CT417.Module;
 import org.junit.jupiter.api.Test;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -31,7 +33,6 @@ class LecturerTest {
     @Test
     void getId() {
         assertEquals(id, lecturer.getId());
-
     }
 
     @Test
@@ -42,5 +43,9 @@ class LecturerTest {
 
     @Test
     void getModulesTaught() {
+        Module module = new Module("Software Engineering", "CT417", null);
+        lecturer.addModuleTaught(module);
+        ArrayList<Module> modules = lecturer.getModule();
+        assertEquals(1, modules.size());
     }
 }
