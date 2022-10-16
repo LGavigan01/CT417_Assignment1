@@ -68,7 +68,6 @@ public class Module {
         this.lecturerResponsible = lecturerResponsible;
     }
 
-    // toString
     @Override
     public String toString()
     {

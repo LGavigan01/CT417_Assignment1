@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bef91e2b-7e5f-467c-9a93-1e62c2914ac7" name="Changes" comment="war plugin">
+    <list default="true" id="bef91e2b-7e5f-467c-9a93-1e62c2914ac7" name="Changes" comment="Finalising tests">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/CourseProgrammeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CourseProgrammeTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/LecturerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LecturerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ModuleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ModuleTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,8 +82,8 @@
       <recent name="CT417Pack" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.LecturerTest.getModulesTaught">
-    <configuration name="CourseProgrammeTest.getListOfStudents" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.StudentTest.getUserName">
+    <configuration name="CourseProgrammeTest.getListOfModules" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -99,7 +96,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;CourseProgrammeTest.getListOfStudents&quot;" />
+            <option value="&quot;CourseProgrammeTest.getListOfModules&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -201,7 +198,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="ModuleTest.getListOfStudents" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="StudentTest.getUserName" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -214,7 +211,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;ModuleTest.getListOfStudents&quot;" />
+            <option value="&quot;StudentTest.getUserName&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -226,11 +223,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.StudentTest.getUserName" />
+        <item itemvalue="Gradle.CourseProgrammeTest.getListOfModules" />
         <item itemvalue="Gradle.LecturerTest.getModulesTaught" />
         <item itemvalue="Gradle.ModuleTest.getLecturerResponsible" />
         <item itemvalue="Gradle.ModuleTest.getAssociatedCourses" />
-        <item itemvalue="Gradle.ModuleTest.getListOfStudents" />
-        <item itemvalue="Gradle.CourseProgrammeTest.getListOfStudents" />
       </list>
     </recent_temporary>
   </component>
@@ -341,7 +338,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665583912419</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Finalising tests">
+      <created>1665613960074</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1665613960074</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -369,6 +373,7 @@
     <MESSAGE value="Moving tests out of package (Causing errors with testing process)" />
     <MESSAGE value="More output adjustments" />
     <MESSAGE value="war plugin" />
-    <option name="LAST_COMMIT_MESSAGE" value="war plugin" />
+    <MESSAGE value="Finalising tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finalising tests" />
   </component>
 </project>
